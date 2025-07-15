@@ -1,0 +1,54 @@
+#container .warning {
+    color: #8a6d3b !important;
+}
+
+#container{
+    background-color: #95adbe;
+    border-width: 0.04in;
+    border-style: solid;
+    border-color: #3c2a4d;
+}
+
+#container p,
+#container a,
+#container h1,
+#container h2,
+#container h3,
+#container ul li{
+    color: #503a65 !important;
+}
+
+#container a{
+    text-decoration: underline !important;
+}
+
+#container hr{
+    border-top-color: #503a65 !important;
+}
+
+#container iframe{
+    aspect-ratio: 560/315;
+}
+
+#container iframe,
+#container video,
+#container img {
+    width: 100%;
+    border-width: 0.04in;
+    border-style: solid;
+    border-color: #3c2a4d;
+    margin: 1% 0%;
+}
+
+.small{
+    text-align: center;
+}
+
+.small video,
+.small img{
+    width: 50% !important;
+}
+
+.sub{
+    margin-left: 1vw;
+}

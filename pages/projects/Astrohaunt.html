@@ -1,0 +1,123 @@
+<div class="col-md-2"></div>
+<div id="container" class="col-md-8">
+    <!-- title screen -->
+    <div>
+        <h2>Astrohaunt</h2>
+        <div class="small">
+            <iframe src="https://www.youtube.com/embed/pOGo_tWYhsk?si=H_QBIv6ZbEl-AOZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>
+            Astrohaunt is the first school project I worked on where I worked together with artists and designers. This project was 
+            <b>developed and released in 8 weeks</b>, during this project I took on the role of <b>gameplay programmer</b>. I worked
+            on this project with <b>12 other developers</b> and it is made using the <b>Unreal engine</b> and the <b>blueprints 
+            scripting language</b>.
+        </p>
+        <p>
+            Astrohaunt is a spiritual successor to the game Paradroid. In this game, you’re in charge of clearing a haunted mansion 
+            that has been launched into space. The ghosts in the mansion can be captured to gain extra abilities to aid you in the 
+            clearing of the mansion.
+        </p>
+        <b>
+            <i>
+                <a href="https://buas.itch.io/astrohaunt" target="_blank">Link to the Astrohaunt itch.io page</a>
+            </i>
+        </b>
+    </div>
+    <hr/>
+    <!-- Table of contents -->
+    <div>
+        <h2>My contributions</h2>
+        <ul>
+            <li>
+                <a href="#locatorMap">Locator map</a>
+            </li>
+            <li>
+                <a href="#roomTracking">Room selection for minigame</a>
+            </li>
+            <li>
+                <a href="#ghostAbsorption">Ghost absorption</a>
+            </li>
+            <li>
+                <a href="#gravityHole">Gravity hole</a>
+            </li>
+            <li>
+                <a href="#healingPad">Healing pad</a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="locatorMap">
+        <h2>Locator map</h2>
+        <p>
+            One of the features I worked on was the locator map. This object could be used by the player to figure out where on 
+            the current level they are. Interacting with the locator map would show the player a map of the current level. On this 
+            map, there would be an image that would indicate where the player is currently located. 
+        </p>
+        <p>
+            To make it easier to move the locations of the locators around in later iterations of the level, I created a system where 
+            the current position of the player would dynamically be placed on the map. This is achieved by placing two anchors in the 
+            level, these anchors march the boundary of the level. Using this boundary the locator can calculate the player's position 
+            in the level and turn this into an X and Y coordinate for the marker on the map.
+        </p>
+        <video controls>
+            <source src="./videos/Astrohaunt/LocatorDemo.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="roomTracking">
+        <h2>Room selection for minigame</h2>
+        <p>
+            When the player starts the mini-game for capturing a ghost, they are locked into the room and the player and ghost are 
+            placed across from each other. I worked on the system for keeping track of the room the player is in.
+        </p>
+        <p>
+            To keep track of the room the player is in, I created a blueprint that represents a room. This blueprint allows the 
+            developer to spawn collision volumes that can be placed at the doors used to enter the room. These volumes will notify 
+            the room that the player has entered. To lock the correct doors, the developer can also add references to the doors 
+            surrounding the room.
+        </p>
+        <img src="./images/Astrohaunt/RoomTracking.png"/>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="ghostAbsorption">
+        <h2>Ghost absorption</h2>
+        <p>
+            In Astrohaunt, the player can capture ghosts and absorb their abilities. I created the setup for this feature. The player 
+            character has a variable that contains an object that represents the current ability. This is either the standard ability 
+            that contains the player's standard attack or one of the 3 ghost abilities the player gets from capturing a ghost. The 
+            ability contains both an attack function that decides what attack gets performed by the player, and it also contains 
+            modifiers that get applied to the player’s stats. 
+        </p>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="gravityHole">
+        <h2>Gravity hole</h2>
+        <p>
+            One of the hazards the player can run into is a vortex that pulls the player toward its center. The closer the player gets 
+            to the center, the stronger the force that is applied to the player. I implemented this feature.
+        </p>
+        <video controls>
+            <source src="./videos/Astrohaunt/HoleDemo.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="healingPad">
+        <h2>Healing pad</h2>
+        <p>
+            In Astrohaunt, the player can heal themselves by standing on top of a healing pad. As long as the player has enough points 
+            to pay for more health or as long as the player is not at full health, the healing pad will continue to heal them. I 
+            implemented this feature within the project.
+        </p>
+        <video controls>
+            <source src="./videos/Astrohaunt/HealingPadDemo.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</div>

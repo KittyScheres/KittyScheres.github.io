@@ -1,0 +1,92 @@
+<div class="col-md-2"></div>
+<div id="container" class="col-md-8">
+    <!-- title screen -->
+    <div>
+        <h2>Lime raytracer</h2>
+        <div class="small">
+            <video controls>
+                <source src="./videos/Lime/LimeDemo.webm" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        <p>
+            One of my <b>school assignments</b> was to create a raytracer without flat surfaces, that runs on the CPU at a reasonable 
+            framerate. I had <b>8 weeks</b> to complete this project and the entire project is made using <b>C++</b> and a template for rendering 
+            the graphics to the screen and getting input from the user. The focus of the project was to learn the fundamentals of raytracing 
+            and how to take something as performance-heavy as raytracing and how to make it more performant.
+        </p>
+    </div>
+    <hr/>
+    <!-- Table of contents -->
+    <div>
+        <h2>Table of contents</h2>
+        <ul>
+            <li>
+                <a href="#raytracing">Raytracing</a>
+            </li>
+            <li>
+                <a href="#bvh">Bounding volume hierarchy</a>
+            </li>
+            <li>
+                <a href="#multithreading">Multithreading</a>
+            </li>
+            <li>
+                <a href="#demoShots">Demo shots</a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <div id="raytracing">
+        <h2>Raytracing</h2>
+        <p>
+            The focus was to learn about the algorithms and math associated with withed style raytracing. The project includes 
+            the following:
+        </p>
+        <ul>
+            <li>Whitted-style raytracing</li>
+            <li>Monte Carlo raytracing</li>
+            <li>Raytracing a sphere</li>
+            <li>Raytracing an ellipsoid</li>
+            <li>Making use of point lights</li>
+            <li>Making use of area lights</li>
+            <li>Diffuse materials</li>
+            <li>Reflective materials</li>
+            <li>Dielectric materials</li>
+            <li>Applying beer’s law to Dielectrics</li>
+        </ul>
+    </div>
+    <hr/>
+    <div id="bvh">
+        <h2>Bounding volume hierarchy</h2>
+        <p>
+            Next to creating a raytracer, we also needed to work on making it more performant. One way I got a lot of performance 
+            out of my raytracer was by applying an optimization structure to my scene to make it easier to see what geometry the 
+            rays are colliding with. For my optimization structure, I used the following:
+        </p>
+        <ul>
+            <li>Creating a Bounding volume hierarchy that contains all the geometry in the scene</li>
+            <li>Making use of Surface Area Heuristics to find the optimal split for each bounding volume</li>
+        </ul>
+    </div>
+    <hr/>
+    <div id="multithreading">
+        <h2>Multithreading</h2>
+        <p>
+            To squeeze a bit more performance out of my raytracer I decided to investigate multithreading. In the end, I was able 
+            to setup a job system that collects jobs for rendering parts of the frame, once the entire frame is rendered it is 
+            displayed to the user, and the jobs for the next frame are provided to the job system.
+        </p>
+    </div>
+    <hr/>
+    <div id="demoShots">
+        <h2>Demo shots</h2>
+        <div class="small">
+            <img src="./images/Lime/Gates.png"/>
+            <img src="./images/Lime/ReflectiveFractal.png"/>
+            <img src="./images/Lime/BigFractal.png"/>
+            <img src="./images/Lime/DielectricRain.png"/>
+            <img src="./images/Lime/ElipsoidSea.png"/>
+            <img src="./images/Lime/AreaLight.png"/>
+        </div>
+    </div>
+</div>

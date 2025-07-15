@@ -1,0 +1,164 @@
+/* Fonts */
+@font-face {
+    font-family: "playpenSans";
+    src: url("./../fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf");
+}
+
+body{
+    background-color: #503a65 !important;
+    font-family: "playpenSans" !important;
+}
+
+h1{
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #e0f0ea !important;
+}
+
+/* Scroll bar */
+/* Provided by: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+::-webkit-scrollbar {
+  width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #e0f0ea; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #95adbe; 
+}
+
+/* Navigation bar */
+#navbar {
+    background-color: #3c2a4d;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar h1, 
+#navbar h2 { 
+    text-align: center;
+    color: #e0f0ea;
+}
+
+h1 {
+    font-size: 3em !important;
+}
+
+h2 {
+    font-size: 2.5em !important;
+    text-align: center;
+}
+
+#navbar a{
+    text-align: center;
+    color: #e0f0ea;
+    font-size: 2em;
+}
+
+#navbar li.active a, 
+#navbar li.active a:focus, 
+#navbar li.active a:hover {
+    background-color: #7191a8
+}
+
+#navbar li:hover a,
+#navbar li:hover a:focus {
+    background-color: #574f7d;
+}
+
+#navbar hr {
+    border-top-color: #e0f0ea;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin: 2.5vh 0;
+}
+
+.social img{
+    height: 5vh;
+}
+
+/* Content field */
+#contentField {
+    background-color: #503a65;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 992px) {
+    /* Navigation bar */
+    #navbar {
+        background-color: #3c2a4d;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #navbar h1, 
+    #navbar h2 { 
+        text-align: center;
+        color: #e0f0ea;
+    }
+
+    h1 {
+        font-size: 36px !important;
+    }
+    
+    h2 {
+        font-size: 30px !important;
+    }
+
+    #navbar a{
+        text-align: left;
+        color: #e0f0ea;
+        font-size: 1.5em;
+    }
+
+    #navbar li.active a, 
+    #navbar li.active a:focus, 
+    #navbar li.active a:hover {
+        background-color: #7191a8
+    }
+
+    #navbar li:hover a,
+    #navbar li:hover a:focus {
+        background-color: #574f7d;
+    }
+
+    #navbar hr {
+        border-top-color: #e0f0ea;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        margin: 3vh 0;
+    }
+
+    .social img{
+        height: 10vh;
+    }
+
+    /* Content field */
+    #contentField {
+        background-color: #503a65;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,90 @@
+<div class="col-md-2"></div>
+<div id="container" class="col-md-8">
+    <!-- title screen -->
+    <div>
+        <h2>Wombat Combat engine</h2>
+        <video controls>
+            <source src="./videos/Wombat/final_demo.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+        <p>
+            The wombat combat engine is a <b>first-person shooter game engine</b> I and <b>6 other people</b> worked on over the 
+            duration of <b>16 weeks</b>. This engine was made to work on both <b>Windows computers and the PlayStation 5</b>.
+            While working on the project I took on the specialization of <b>engine programmer</b>. My main contributions to this 
+            project are related to the loading of level geometry and entity data from TrenchBroom’s BSP files and the 
+            implementation of Bullet physics for this project.
+        </p>
+    </div>
+    <hr/>
+    <!-- Table of contents -->
+    <div>
+        <h2>My contributions</h2>
+        <ul>
+            <li>
+                <a href="#BSP">Quake BSP-level file loading</a>
+            </li>
+            <li>
+                <a href="#Physics">Bullet physics implementation</a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="BSP">
+        <h2>Quake BSP-level file loading</h2>
+        <p>
+            The TrenchBroom level editor was chosen as the level editor for this engine. This is because designers in our year were 
+            using it to create quake levels, this allowed us to make use of their levels to test our engine features. During the
+            project it was my responsibility to implement the feature that allowed us to read the .bsp files that TrenchBroom outputs.
+        </p>
+        <p>
+            Quake and its levels have a lot of features, of these features the Wombat engine supports the following:
+        </p>
+        <ul>
+            <li>The loading and rendering of brush-based geometry</li>
+            <li>The rendering of textures applied to the brushes</li>
+            <li>The rendering of lightmaps applied to the brushes</li>
+            <li>The loading of custom entities as defined in Trenchbroom</li>
+            <li>The loading of brush-based entities as defined in TrenchBroom</li>
+            <li>The loading of trigger areas as defined in TrenchBroom</li>
+            <li>The loading and implementing of event triggers as defined in Trenchbroom</li>
+        </ul>
+        <p>
+            With the implementation of these features, the engine can run interesting and interactive levels in the style of the 
+            first Quake game.
+        </p>
+        <img src="./images/thumbnails/WombatCombatThumbnail.png" />
+        <video controls>
+            <source src="./videos/Wombat/sponza.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="Physics">
+        <h2>Bullet physics implementation</h2>
+        <p>
+            For the physics of the Wombat engine, the Bullet physics library was chosen. I had worked with this library 
+            before, because of this I worked on implementing the library after .bsp file loading was ready for use.
+        </p>
+        <p>
+            Using Bullet I implemented the following features:
+        </p>
+        <ul>
+            <li>The capsule collider for the player</li>
+            <li>The mesh collider for the Level loaded from a BSP</li>
+            <li>Raycasts</li>
+            <li>Trigger boxes that notify connected objects when they have been entered</li>
+            <li>Collision event callbacks to notify objects a collision occurred</li>
+            <li>Collision groups for enabling/disabling collisions between certain groups</li>
+        </ul>
+        <video controls>
+            <source src="./videos/Wombat/PhysicsDebuglines.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+        <video controls>
+            <source src="./videos/Wombat/door.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</div>

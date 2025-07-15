@@ -1,0 +1,112 @@
+<div class="col-md-2"></div>
+<div id="container" class="col-md-8">
+    <!-- title screen -->
+    <div>
+        <h2>Camp Champ</h2>
+        <div class="small">
+            <iframe src="https://www.youtube.com/embed/yU8eC-tQroc?si=YP56UUoav_wIdwAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>
+            Camp Champ is a game I worked on during the second half of my second year at the Breda University of Applied Sciences. 
+            Development of this project started with <b>4 weeks of concepting</b> and the remaining <b>8 weeks were spent on developing 
+            and releasing</b> the game. During these 8 weeks, I was both a <b>gameplay programmer</b> and the <b>tech lead</b> 
+            for this project. I worked on this project with <b>13 other developers</b>, including 1 producer and 2 leads for the other 
+            diciplines. The project was made using the <b>Unreal engine</b> and the <b>blueprints visual scripting language</b>.
+        </p>
+        <p>
+            Camp Champ is a 2v2 local co-op game where you play a game of capture the flag. The team that captured the most flags 
+            when the time runs out wins. During the match items will spawn to aid you in the capturing of the opponent’s flag. These 
+            items range from a fishing rod to a powerful bazooka.
+
+        </p>
+        <b>
+            <i>
+                <a href="https://buas.itch.io/camp-champ" target="_blank">Link to the Camp Champ itch.io page</a>
+            </i>
+        </b>
+    </div>
+    <hr/>
+    <!-- Table of contents -->
+    <div>
+        <h2>My contributions</h2>
+        <ul>
+            <li>
+                <a href="#leadWork">Lead work</a>
+            </li>
+            <li>
+                <a href="#gameplayWork">Gameplay work</a>
+                <ul>
+                    <li>
+                        <a href="#flagSystem">Flag system</a>
+                    </li>
+                    <li>
+                        <a href="#teamSelection">Team selection UI</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="leadWork">
+        <h2>Lead work</h2>
+        <p>
+            As a tech lead my work was split up between technical duties and general lead duties.
+        </p>
+        <p>
+            As tech lead, my duties revolved around maintaining the quality of technical pipelines in our project. Specifically, 
+            those around the project itself, our version control, and our task management board. But it would also happen in the way 
+            of providing insight into the technical aspects of decisions that would be discussed during meetings.
+        </p>
+        <p>
+            My general lead duties revolved around making sure the team could do their work effectively without much issue. To do 
+            this the other leads and I took care of hosting the required scrum rituals (sprint planning, stand up, sprint 
+            retrospective) and meetings that were needed to make decisions for the project. Another way I helped the team was by 
+            supporting communication within the team and working on the resolution of conflicts that happened during the development 
+            of the game.
+        </p>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="gameplayWork">
+        <h2>Gameplay work</h2>
+        <p>
+            My work as a gameplay programmer was split between the implementation of gameplay features and the fixing of bugs in the 
+            game. Here are some highlights of the features I worked on.
+        </p>
+        
+        <!-- Sub heading -->
+        <div id="flagSystem">
+            <h3>Flag system</h3>
+            <p>
+                One of my main contributions to this project was the creation of the flag system. This includes the bases where the 
+                flags are stored and the flag-carrying behaviour of the players.
+            </p>
+            <p>
+                A flag has 3 states: blue, red, and neutral. When a flag has been put down inside of a team's base, only players 
+                from the other team can pick up the flag. In this case, the flag is either in its blue or red state. If a player 
+                drops the flag while carrying it because they got hit, the flag goes into a neutral state where both teams can pick 
+                it up. The only exception to this is the player that dropped the flag, they must wait a bit before they can pick up 
+                the flag again.
+            </p>
+            <video controls>
+                <source src="./videos/CampChamp/FlagsDemo.webm" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        
+        <!-- Sub heading -->
+        <div id="teamSelection">
+            <h3>Team selection UI</h3>
+            <p>
+                Another feature I worked on is the team selection UI. Here players select what team they want to be assigned to by 
+                pressing the left or right d-pad button on their controller. Each team can have a maximum of 2 people. When a player 
+                chooses a valid team, the portrait displays the character they play as when the game starts.
+            </p>
+            <video controls>
+                <source src="./videos/CampChamp/TeamSelectDemo.webm" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+    </div>
+</div>

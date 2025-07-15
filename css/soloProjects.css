@@ -1,0 +1,103 @@
+#projectList {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+}
+
+#loading{
+    margin-top: 2%;
+    width: 5%;
+}
+
+.game{
+    height: auto;
+    border-width: 0.06in;
+    border-style: solid;
+    border-radius: 0.30in;
+    border-color: #3c2a4d;
+    background-color: #95adbe;
+    margin-bottom: 1.5vh;
+}
+
+.game img{
+    height: auto;
+    width: 100%;
+    float: left;
+    border-radius: 0.25in;
+}
+
+.game h3,
+.game p{
+    color: #503a65 !important;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em !important;
+}
+
+.text{
+    margin-left: 0%;
+}
+
+.sameLine{
+    margin-right: 0%;
+    float: none;
+    margin: 1% 1%
+}
+
+.tagsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+    #projectList {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 90vh;
+    }
+    
+    .game{
+        height: 20vh;
+        border-width: 0.04in;
+        border-style: solid;
+        border-radius: 0.15in;
+        border-color: #3c2a4d;
+        background-color: #95adbe;
+        margin-bottom: 1.5vh;
+    }
+    
+    .game img{
+        height: 100%;
+        width: auto;
+        float: left;
+        border-radius: 0.1in;
+    }
+    
+    .game h3,
+    .game p{
+        color: #503a65 !important;
+        text-align: left;
+    }
+    
+    h3 {
+        font-size: 1.17em !important;
+    }
+
+    .text{
+        margin-left: 25%;
+    }
+
+    .sameLine{
+        margin: 0% 0%;
+        margin-right: 2%;
+        margin-bottom: 1%;
+        float: left;
+    }
+    
+    .tagsContainer{
+        display: block;
+    }
+}

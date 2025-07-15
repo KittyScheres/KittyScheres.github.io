@@ -1,0 +1,121 @@
+.category{
+    background-color: #95adbe;
+    border-radius: 0.5in; 
+    border-width: 0.04in;
+    border-style: solid;
+    border-color: #3c2a4d;
+    width: 95%;
+    margin-left: 2.5% !important;
+    margin-bottom: 3vh;
+}
+
+.category,
+.category h3{
+    color: #503a65 !important;
+}
+
+.category .row{
+    margin-bottom: 0vh;
+}
+
+.title,
+.content,
+.content-withDescription{
+    text-align: center;
+    margin-bottom: 2% !important;
+}
+
+.content{
+    width: 80% !important;
+    margin-left: 10% !important;
+    background-color: #574f7d;
+    color: #e0f0ea !important;
+    border-radius: 0.5in;
+    border-width: 0.04in;
+    border-style: solid;
+    border-color: #3c2a4d;
+}
+
+.content-withDescription{
+    width: 80% !important;
+    margin-left: 10% !important;
+    background-color: #574f7d;
+    color: #e0f0ea !important;
+    border-radius: 0.5in;
+    border-width: 0.04in;
+    border-style: solid;
+    border-color: #3c2a4d;
+}
+
+.content img,
+.content-withDescription img{
+    height: 10vh;
+    margin: 3vh 0;
+}
+
+@media screen and (min-width: 992px) {
+    .category{
+        background-color: #95adbe;
+        border-radius: 0.5in; 
+        border-width: 0.04in;
+        border-style: solid;
+        border-color: #3c2a4d;
+        width: 95%;
+        margin-left: 2.5% !important;
+        margin-bottom: 3vh;
+    }
+    
+    .category,
+    .category h3{
+        color: #503a65 !important;
+    }
+    
+    .category .row{
+        margin-bottom: 2vh;
+    }
+    
+    .title,
+    .content,
+    .content-withDescription{
+        text-align: center;
+        margin-bottom: 0% !important;
+    }
+    
+    .title {
+        margin-bottom: 20px !important;
+    }
+
+    .content{
+        width: 16.66666666% !important;
+        margin-left: 0% !important;
+        background-color: #574f7d;
+        color: #e0f0ea !important;
+        border-radius: 0.5in;
+        border-width: 0.04in;
+        border-style: solid;
+        border-color: #3c2a4d;
+    }
+
+    .content-withDescription{
+        width: 16.66666666% !important;
+        height: 28%;
+        margin-left: 0% !important;
+        background-color: #574f7d;
+        color: #e0f0ea !important;
+        border-radius: 0.5in;
+        border-width: 0.04in;
+        border-style: solid;
+        border-color: #3c2a4d;
+    }
+    
+    .content img,
+    .content-withDescription img{
+        width: auto;
+        margin: 3vh 0;
+    }
+
+    .content .description,
+    .content-withDescription .description{
+        font-size: 0.75em;
+    }
+}

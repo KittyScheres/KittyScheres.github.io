@@ -1,0 +1,217 @@
+<div class="col-md-2"></div>
+<div id="container" class="col-md-8">
+    <!-- title screen -->
+    <div>
+        <h2>Wall Town Wonders</h2>
+        <div class="small">
+            <iframe src="https://www.youtube.com/embed/bn73BUKMP-g?si=MR1np46kdDR-tH12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>
+            Wall Town Wonders is a <b>mixed reality</b> town building game where the player must gather resources by playing various minigames. These resources 
+            are then used to build the town. 
+        </p>
+        <p>
+            I worked on this game during my <b>40-week graduation internship</b> at <b><a href="https://www.cyborn.be/" target="_blank">Cyborn</a></b>. 
+            During my internship I worked on getting the game ready for release, implementing 2 content updates, and aided in the porting the game from 
+            <b><a href="https://www.meta.com/en-gb/experiences/wall-town-wonders/6103056399797843/" target="_blank">Meta MR</a></b> to other platforms such as: 
+            <b><a href="https://store.steampowered.com/app/3570400/Wall_Town_Wonders/" target="_blank">Steam</a></b>, 
+            <b><a href="https://store.playstation.com/nl-nl/product/HP5783-PPSA28796_00-0038856137746743" target="_blank">PlayStation</a></b>, and 
+            <b><a href="https://store-global.picoxr.com/global/detail/1/7472326525388587013" target="_blank">Pico MR</a></b>.
+        </p>
+    </div>
+    <hr/>
+    <!-- Table of contents -->
+    <div>
+        <h2>Table of contents</h2>
+        <ul>
+            <li>
+                <a href="#minigames">Minigames</a>
+                <ul>
+                    <li>
+                        <a href="#fertilizer">Fertilizer bouncing</a>
+                    </li>
+                    <li>
+                        <a href="#painter">Butterfly painter</a>
+                    </li>
+                    <li>
+                        <a href="#lostPackages">Lost packages</a>
+                    </li>
+                    <li>
+                        <a href="#giftDelivery">Gift delivery</a>
+                    </li>
+                </ul>
+            </li>
+             <li>
+                <a href="#balloonAnimations">Balloon passenger animations</a>
+            </li>
+             <li>
+                <a href="#dates">Dates</a>
+            </li>
+             <li>
+                <a href="#vrPort">VR port</a>
+            </li>
+             <li>
+                <a href="#picoPort">Pico port</a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="minigames">
+        <h2>Minigames</h2>
+        <p>
+            A big part of Wall Town Wonders is its minigames. These minigames are the main method of gaining resources for the player and there are a lot of 
+            them. The minigames listed below are a couple of the minigames I worked on:
+        </p>
+
+        <!-- Sub heading -->
+        <div id="fertilizer">
+            <h3>Fertilizer bouncing</h3>
+            <p>
+                The fertilizer bouncing minigame requires the player to bounce 3 balls of fertilizer to their farm by using their hands or controllers. For 
+                this minigame, I made the bouncy ball actor and the gameplay implementation of bouncing it to the farm. My work on the bouncy ball of 
+                fertilizer also includes the squishing of the ball when it is hit by the player.
+            </p>
+            <video controls>
+                <source src="./videos/WallTownWonders/FertilizerMinigameDemo.webm" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        
+        <!-- Sub heading -->
+        <div id="painter">
+            <h3>Butterfly painter</h3>
+            <p>
+                The butterfly painter minigame requires the player to paint a group of butterflies to the correct colour by hitting them. The player can 
+                select the colour they want to use with the paint selectors in front of the park building.
+            </p>
+            <p>
+                For this minigame, I implemented the base gameplay loop. I implemented functionality for painting the butterflies, checking for the completion 
+                condition, paint colour selection, and the paint colour selection actor.
+            </p>
+            <video controls>
+                <source src="./videos/WallTownWonders/ButterflyPainterDemo.webm" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        
+        <!-- Sub heading -->
+        <div id="lostPackages">
+            <h3>Lost packages</h3>
+            <p>
+                The lost packages minigame requires the player to find a platform with lose crates near it. After finding the platform, the player must move 
+                all the crates onto the platform before they get stolen by the ninja.
+            </p>
+            <p>
+                I made all the minigame specific functionality for this minigame. This includes: the spawning of the packages and platform, the ninja stealing 
+                packages, keeping track of whether a package is on the floor or on the platform, and detecting when the minigame is over. I also continued to 
+                work on this minigame during the polishing process until it was considered finished.
+            </p>
+            <video controls>
+                <source src="./videos/WallTownWonders/LostPackagesDemo.webm" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        
+        <!-- Sub heading -->
+        <div id="giftDelivery">
+            <h3>Gift delivery</h3>
+            <p>
+                The gift delivery minigame is one of the minigames made specifically for the Wall Town Wonders Holiday update. This minigame lets the player 
+                take control of a flying chariot which is being pulled forward by butterflies. In from this chariot, the mayor can throw gifts to the people 
+                of the wall town. The player’s goal is to throw the correct number of gifts to the town’s people standing on the balloon anchoring platforms.
+            </p>
+            <p>
+                I worked on this minigame from start to finish. The movement from the butterfly chariot is the same as the plane’s movement functionality. 
+                However, this functionality has been changed to better fit the chariot. The functionality for the town’s people receiving gifts, throwing of 
+                gifts, and restocking of gifts has been implemented by me. This includes the <b>animation blueprints</b> for both the mayor in the chariot and the 
+                town’s people waiting to receive their packages.
+            </p>
+            <video controls>
+                <source src="./videos/WallTownWonders/GiftDeliveryDemo.webm" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="balloonAnimations">
+        <h2>Balloon passenger animations</h2>
+        <p>
+            When the player has any interactions with the balloon outside of the first balloon related quest. The characters in the balloon react when the 
+            player hits the balloon. This reaction is different based on which direction the player hits the balloon from and how hard they hit it. When the 
+            player hits the balloon enough times with a lot of force, the characters in the balloon will end up barfing.
+        </p>
+        <p>
+            I implemented the animation blueprint that is applied to the passengers of the balloon.
+        </p>
+        <video controls>
+            <source src="./videos/WallTownWonders/BalloonAnimationsDemo.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="dates">
+        <h2>Dates</h2>
+        <p>
+            The main feature that was added during the valentine’s day update for Wall Town Wonders are the dates. The player can select one of 3 possible 
+            dates. When a date is selected, the player choses both the characters that will participate in the date and the modification for the date. When 
+            the player confirms the details for the date, the date plays out before them. In most cases this means that the character will go through a set of 
+            animations related to the date score that has been calculated for the specific date setup. At the end of the date the characters discuss the result 
+            of the date and eventually they might even start a relationship.
+        </p>
+        <p>
+            I setup and maintained most of the dating mechanic during the development of the valentine’s update. I setup the base functionality for all the 
+            dates (character and modification selection, calculating the date score, playing the correct set of animations, playing the ending sequence) I also 
+            implemented the initial functionality for keeping track of all relationships in the town, finally I also implemented and validated the 
+            functionality for all three of the dates currently in Wall Town Wonders (balloon, bathhouse, painting).
+        </p>
+        <h3>Balloon date</h3>
+        <video controls>
+            <source src="./videos/WallTownWonders/BalloonDate.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+        <h3>Bathhouse date</h3>
+        <video controls>
+            <source src="./videos/WallTownWonders/BathhouseDate.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+        <h3>Painting date</h3>
+        <video controls>
+            <source src="./videos/WallTownWonders/PainterDate.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="vrPort">
+        <h2>VR port</h2>
+        <p>
+            Next to the mixed realty version of Wall Town Wonders, there is also a full virtual reality version. This is a complete version of the mixed reality 
+            version of the game with the inclusion of 3 environments to replace the mixed reality rooms. Next to the environments there are also some qualities 
+            of life features exclusive to the VR version with the inclusion of a movable player character and a seated mode. This version of the game is 
+            available on both <b>PlayStation</b> and <b>Steam</b>.
+        </p>
+        <p>
+            My contributions to this port are focused on fixing bugs that occurred during the porting process from mixed reality to virtual reality.
+        </p>
+        <div class="small">
+            <iframe src="https://www.youtube.com/embed/RBH_xdZYT0U?si=qA4zjBUuE2_WCJX2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <hr/>
+    <!-- Heading -->  
+    <div id="picoPort">
+        <h2>Pico port</h2>
+        <p>
+            After developing Wall Town Wonders for the Meta Quest 3, a port for the Pico mixed reality headsets was also made. This is a full port of 
+            Wall Town Wonders with all the functionalities present in the Meta Quest version of the game.
+        </p>
+        <p>
+            Just like with the VR port, my contributions to the Pico port for Wall Town Wonders revolve around fixing issues that pop-ed up while porting 
+            the game from the Meta SDK to the Pico SDK. The bug fixing for this port however, required me to do a lot of work on the <b>mixed reality 
+            room management</b>. This also required me to get more familiar with the <b>Pico sense pack SDK</b>.
+        </p>
+    </div>
+</div>
