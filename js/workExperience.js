@@ -1,5 +1,5 @@
 var projects = [
-    {visible: true, name: "Wall Town Wonders", description: "A mixed reality town building game where the player can gain resources through various minigames.", engine: "Unreal engine 5", language: "C++/Blueprints", duration: "September 2024 - June 2025", company: "Cyborn", platforms: "Meta Quest/Pico 4/Steam/Playstation VR 2", teamRole: "Intern Game Programmer", imageURL: "WallTownWondersThumbnail.png", project: "WallTownWonders"},
+    {visible: true, name: "Wall Town Wonders", description: "Wall Town Wonders is a mixed reality game where you will transform your living room into a living, breathing town filled with colorful miniature characters. Help them out rebuilding their town and unlock lots of unique buildings, characters, and customization options.", engine: "Unreal engine 5", language: "C++/Blueprints", duration: "September 2024 - June 2025", company: "Cyborn", platforms: "Meta Quest/Pico 4/Steam/Playstation VR 2", teamRole: "Intern Game Programmer", imageURL: "WallTownWondersThumbnail.png", project: "WallTownWonders"},
 ];
 
 $("#projectList").ready(function () {
