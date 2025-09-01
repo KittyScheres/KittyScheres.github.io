@@ -13,7 +13,6 @@
     height: auto;
     border-width: 0.06in;
     border-style: solid;
-    border-radius: 0.30in;
     border-color: #3c2a4d;
     background-color: #95adbe;
     margin-bottom: 1.5vh;
@@ -23,7 +22,6 @@
     height: auto;
     width: 100%;
     float: left;
-    border-radius: 0.25in;
 }
 
 .game h3,
@@ -63,7 +61,6 @@ h3 {
         height: 20vh;
         border-width: 0.04in;
         border-style: solid;
-        border-radius: 0.15in;
         border-color: #3c2a4d;
         background-color: #95adbe;
         margin-bottom: 1.5vh;
@@ -73,7 +70,6 @@ h3 {
         height: 100%;
         width: auto;
         float: left;
-        border-radius: 0.1in;
     }
     
     .game h3,

@@ -1,12 +1,12 @@
 /* Fonts */
 @font-face {
-    font-family: "playpenSans";
-    src: url("./../fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf");
+    font-family: "EpundaSlab";
+    src: url("./../fonts/Epunda_Slab/EpundaSlab-VariableFont_wght.ttf");
 }
 
 body{
     background-color: #503a65 !important;
-    font-family: "playpenSans" !important;
+    font-family: "EpundaSlab" !important;
 }
 
 h1{
