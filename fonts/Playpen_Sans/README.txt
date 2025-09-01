@@ -1,32 +1,25 @@
-Epunda Slab Variable Font
-=========================
+Playpen Sans Variable Font
+==========================
 
-This download contains Epunda Slab as both variable fonts and static fonts.
+This download contains Playpen Sans as both a variable font and static fonts.
 
-Epunda Slab is a variable font with this axis:
+Playpen Sans is a variable font with this axis:
   wght
 
-This means all the styles are contained in these files:
-  EpundaSlab-VariableFont_wght.ttf
-  EpundaSlab-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  PlaypenSans-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Epunda Slab:
-  static/EpundaSlab-Light.ttf
-  static/EpundaSlab-Regular.ttf
-  static/EpundaSlab-Medium.ttf
-  static/EpundaSlab-SemiBold.ttf
-  static/EpundaSlab-Bold.ttf
-  static/EpundaSlab-ExtraBold.ttf
-  static/EpundaSlab-Black.ttf
-  static/EpundaSlab-LightItalic.ttf
-  static/EpundaSlab-Italic.ttf
-  static/EpundaSlab-MediumItalic.ttf
-  static/EpundaSlab-SemiBoldItalic.ttf
-  static/EpundaSlab-BoldItalic.ttf
-  static/EpundaSlab-ExtraBoldItalic.ttf
-  static/EpundaSlab-BlackItalic.ttf
+in those cases you can use the static font files for Playpen Sans:
+  static/PlaypenSans-Thin.ttf
+  static/PlaypenSans-ExtraLight.ttf
+  static/PlaypenSans-Light.ttf
+  static/PlaypenSans-Regular.ttf
+  static/PlaypenSans-Medium.ttf
+  static/PlaypenSans-SemiBold.ttf
+  static/PlaypenSans-Bold.ttf
+  static/PlaypenSans-ExtraBold.ttf
 
 Get started
 -----------

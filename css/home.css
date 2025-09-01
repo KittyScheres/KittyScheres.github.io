@@ -13,6 +13,7 @@
     height: 38vh;
     border-width: 0.04in;
     margin-bottom: 2vh;
+    border-radius: 15in;
     border-style: solid;
     border-color: #3c2a4d;
 }
@@ -21,6 +22,7 @@
     padding: 2%;
     border-width: 0.04in;
     border-style: solid;
+    border-radius: 0.5in;
     border-color: #3c2a4d;
     background-color: #95adbe;
     color: #503a65 !important;
@@ -46,6 +48,7 @@
     height: auto;
     border-width: 0.06in;
     border-style: solid;
+    border-radius: 0.30in;
     border-color: #3c2a4d;
     background-color: #95adbe;
     margin-bottom: 1.5vh;
@@ -55,6 +58,7 @@
     height: auto;
     width: 100%;
     float: left;
+    border-radius: 0.25in;
 }
 
 .game h3,
@@ -94,6 +98,7 @@ span{
         height: 40vh;
         border-width: 0.04in;
         margin-bottom: 2vh;
+        border-radius: 15in;
         border-style: solid;
         border-color: #3c2a4d;
     }
